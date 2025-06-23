@@ -14,6 +14,3 @@ fun Raise<CustomerNotFound>.customer(): Customer = Customer(1)
 val error: Either<CustomerNotFound, Customer> = CustomerNotFound.left()
 
 fun Raise<CustomerNotFound>.error(): Customer = raise(CustomerNotFound)
-fun test (){
-    println("test")
-}
